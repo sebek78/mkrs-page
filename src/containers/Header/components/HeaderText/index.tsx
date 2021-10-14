@@ -9,26 +9,26 @@ const StyledWrapper = styled.div`
   font-family: "Cormorant Garamond", serif;
   & h1 {
     font-weight: 300;
-    font-size: 32px;
+    font-size: ${(props) => props.theme.typography.h1.mobile.fontSize};
   }
   & h2 {
     font-weight: 300;
-    font-size: 26px;
+    font-size: ${(props) => props.theme.typography.h2.mobile.fontSize};
   }
-  @media (min-width: 768px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     & h1 {
-      font-size: 40px;
+      font-size: ${(props) => props.theme.typography.h1.tablet.fontSize};
     }
     & h2 {
-      font-size: 32px;
+      font-size: ${(props) => props.theme.typography.h2.mobile.fontSize};
     }
   }
-  @media (min-width: 1024px) {
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     & h1 {
-      font-size: 48px;
+      font-size: ${(props) => props.theme.typography.h1.desktop.fontSize};
     }
     & h2 {
-      font-size: 36px;
+      font-size: ${(props) => props.theme.typography.h2.mobile.fontSize};
     }
   }
 `;
