@@ -7,6 +7,9 @@ const StyledWrapper = styled.div`
   justify-content: center;
   align-items: center;
   font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  width: max-content;
+  padding: 0 16px;
   & h1 {
     font-weight: 300;
     font-size: ${(props) => props.theme.typography.h1.mobile.fontSize};
@@ -20,7 +23,7 @@ const StyledWrapper = styled.div`
       font-size: ${(props) => props.theme.typography.h1.tablet.fontSize};
     }
     & h2 {
-      font-size: ${(props) => props.theme.typography.h2.mobile.fontSize};
+      font-size: ${(props) => props.theme.typography.h2.tablet.fontSize};
     }
   }
   @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
@@ -28,7 +31,7 @@ const StyledWrapper = styled.div`
       font-size: ${(props) => props.theme.typography.h1.desktop.fontSize};
     }
     & h2 {
-      font-size: ${(props) => props.theme.typography.h2.mobile.fontSize};
+      font-size: ${(props) => props.theme.typography.h2.tablet.fontSize};
     }
   }
 `;

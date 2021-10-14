@@ -34,7 +34,23 @@ const theme = {
       },
     },
   },
-  palette: {},
+  palette: {
+    backgroundColor: {
+      dark: {
+        color: "#0f0f0f",
+      },
+      default: {
+        color: "#1d1d20",
+      },
+      light: {
+        color: "#25262b",
+      },
+    },
+    contrastText: {
+      primary: "#fff",
+      secondary: "#8a8f98",
+    },
+  },
 };
 
 export default theme;

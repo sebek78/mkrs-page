@@ -1,16 +1,25 @@
 import styled from "styled-components";
 import HeaderText from "./components/HeaderText";
 import Logo from "./components/Logo";
+import SocialIcons from "../SocialIcons";
 
 const StyledHeader = styled.header`
-  width: 90vw;
-  height: 200px;
+  width: 100vw;
+  height: 160px;
   margin: 0 auto;
-  border-bottom: 1px solid #c0c0c0;
+  padding: 0 5vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+    height: 160px;
+    padding: 0 4vw;
+  }
+  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+    height: 200px;
+    padding: 0 3vw;
+  }
 `;
 
 const Header = () => {
@@ -18,6 +27,7 @@ const Header = () => {
     <StyledHeader>
       <Logo />
       <HeaderText />
+      <SocialIcons />
     </StyledHeader>
   );
 };
