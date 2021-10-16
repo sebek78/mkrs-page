@@ -4,9 +4,8 @@ import Logo from "./components/Logo";
 import SocialIcons from "../SocialIcons";
 
 const StyledHeader = styled.header`
-  width: 100vw;
+  width: 100%;
   height: 160px;
-  margin: 0 auto;
   padding: 0 5vw;
   display: flex;
   flex-direction: row;

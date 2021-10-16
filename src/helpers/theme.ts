@@ -1,3 +1,5 @@
+export type BgColors = "dark" | "default" | "light";
+
 const theme = {
   breakpoints: {
     mobile: "320px",
@@ -6,6 +8,7 @@ const theme = {
   },
   typography: {
     h1: {
+      fontFamily: '"Cormorant Garamond", serif',
       mobile: {
         fontSize: "32px",
         lineHeight: 1.25,
@@ -20,6 +23,7 @@ const theme = {
       },
     },
     h2: {
+      fontFamily: '"Cormorant Garamond", serif',
       mobile: {
         fontSize: "26px",
         lineHeight: 1.15,
@@ -33,8 +37,42 @@ const theme = {
         lineHeight: 1.25,
       },
     },
+    body: {
+      fontFamily: '"Lato", sans-serif',
+      mobile: {
+        fontSize: "16px",
+        lineHeight: 1.25,
+      },
+      tablet: {
+        fontSize: "16px",
+        lineHeight: 1.375,
+      },
+      desktop: {
+        fontSize: "16px",
+        lineHeight: 1.375,
+      },
+    },
+    body2: {
+      fontFamily: '"Lato", sans-serif',
+      mobile: {
+        fontSize: "20px",
+        lineHeight: 1.25,
+      },
+      tablet: {
+        fontSize: "24px",
+        lineHeight: 1.46,
+      },
+      desktop: {
+        fontSize: "24px",
+        lineHeight: 1.46,
+      },
+    },
   },
   palette: {
+    primary: {
+      default: "#8C1620",
+      dark: "#590202",
+    },
     backgroundColor: {
       dark: {
         color: "#0f0f0f",

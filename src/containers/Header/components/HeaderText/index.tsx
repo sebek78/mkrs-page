@@ -10,36 +10,38 @@ const StyledWrapper = styled.div`
   text-align: center;
   width: max-content;
   padding: 0 16px;
-  & h1 {
+  h1 p:first-child {
     font-weight: 300;
     font-size: ${(props) => props.theme.typography.h1.mobile.fontSize};
   }
-  & h2 {
+  h1 p:last-child {
     font-weight: 300;
     font-size: ${(props) => props.theme.typography.h2.mobile.fontSize};
   }
   @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    & h1 {
+    h1 p:first-child {
       font-size: ${(props) => props.theme.typography.h1.tablet.fontSize};
     }
-    & h2 {
+    h1 p:last-child {
       font-size: ${(props) => props.theme.typography.h2.tablet.fontSize};
     }
   }
   @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    & h1 {
+    h1 p:first-child {
       font-size: ${(props) => props.theme.typography.h1.desktop.fontSize};
     }
-    & h2 {
-      font-size: ${(props) => props.theme.typography.h2.tablet.fontSize};
+    h1 p:last-child {
+      font-size: ${(props) => props.theme.typography.h2.desktop.fontSize};
     }
   }
 `;
 
 const HeaderText = memo(() => (
   <StyledWrapper>
-    <h1>Pracownia artystyczna</h1>
-    <h2>Jan Kowalski</h2>
+    <h1>
+      <p>Pracownia artystyczna</p>
+      <p>Jan Kowalski</p>
+    </h1>
   </StyledWrapper>
 ));
 
