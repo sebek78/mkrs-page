@@ -37,6 +37,21 @@ const theme = {
         lineHeight: 1.25,
       },
     },
+    h3: {
+      fontFamily: '"Lato", sans-serif',
+      mobile: {
+        fontSize: "22px",
+        lineHeight: 1.14,
+      },
+      tablet: {
+        fontSize: "24px",
+        lineHeight: 1.25,
+      },
+      desktop: {
+        fontSize: "28px",
+        lineHeight: 1.25,
+      },
+    },
     body: {
       fontFamily: '"Lato", sans-serif',
       mobile: {

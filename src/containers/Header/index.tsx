@@ -11,6 +11,8 @@ const StyledHeader = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: ${(props) =>
+    props.theme.palette.backgroundColor.dark.color};
   @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
     height: 160px;
     padding: 0 4vw;

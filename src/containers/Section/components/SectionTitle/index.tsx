@@ -11,6 +11,9 @@ const StyledH2 = styled.h2`
   }
   @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
     font-size: ${theme.typography.h2.desktop.fontSize};
+    width: 25vw;
+    text-align: left;
+    margin: 0 auto 16px;
   }
 `;
 
