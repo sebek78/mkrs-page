@@ -4,6 +4,7 @@ import Section from "./containers/Section";
 import Header from "./containers/Header";
 import Introduction from "./containers/Introduction";
 import Features from "./containers/Features";
+import Gallery from "./containers/Gallery";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Features />
       </Section>
       <Section bgColor={"dark"}>
-        <>Galery</>
+        <Gallery />
       </Section>
       <Section>
         <>Visit us</>
