@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import SectionContentWrapper from "../Section/components/SectionContentWrapper";
-import SectionDescription from "../Section/components/SectionDescription";
+import SectionContentWrapper from "../../components/Section/components/SectionContentWrapper";
+import SectionDescription from "../../components/Section/components/SectionDescription";
 
 const CarouselWrapper = styled.div`
   width: 90vw;

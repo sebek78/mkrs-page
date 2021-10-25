@@ -1,6 +1,6 @@
-import SectionContentWrapper from "../Section/components/SectionContentWrapper";
-import SectionDescription from "../Section/components/SectionDescription";
-import SectionSingleImage from "../Section/components/SectionSingleImage";
+import SectionContentWrapper from "../../components/Section/components/SectionContentWrapper";
+import SectionDescription from "../../components/Section/components/SectionDescription";
+import SectionSingleImage from "../../components/Section/components/SectionSingleImage";
 
 const Introduction = () => {
   return (

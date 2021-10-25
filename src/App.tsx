@@ -1,6 +1,6 @@
 import { ThemeProvider } from "styled-components";
 import theme from "./helpers/theme";
-import Section from "./containers/Section";
+import Section from "./components/Section";
 import Header from "./containers/Header";
 import Introduction from "./containers/Introduction";
 import Features from "./containers/Features";
