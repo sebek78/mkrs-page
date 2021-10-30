@@ -5,12 +5,12 @@ const StyledImg = styled.img`
   width: 90vw;
   height: auto;
   padding: 8px;
-  border: 2px solid ${(props) => props.theme.palette.primary.dark};
+  border: 2px solid ${({ theme }) => theme.palette.primary.dark};
   border-radius: 8px;
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     width: 44vw;
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: 45vw;
   }
 `;

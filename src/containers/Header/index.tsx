@@ -11,13 +11,12 @@ const StyledHeader = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: ${(props) =>
-    props.theme.palette.backgroundColor.dark.color};
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  background-color: ${({ theme }) => theme.palette.backgroundColor.dark.color};
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     height: 160px;
     padding: 0 4vw;
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     height: 200px;
     padding: 0 3vw;
   }

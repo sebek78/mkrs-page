@@ -1,33 +1,33 @@
 import styled from "styled-components";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import SectionContentWrapper from "../../components/Section/components/SectionContentWrapper";
-import SectionDescription from "../../components/Section/components/SectionDescription";
+import SectionContentWrapper from "../../components/SectionComponents/SectionContentWrapper";
+import SectionDescription from "../../components/SectionComponents/SectionDescription";
 
 const CarouselWrapper = styled.div`
   width: 90vw;
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     width: 44vw;
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: 45vw;
   }
 `;
 
 const StyledCarousel = styled(Carousel)`
   & .slide .legend {
-    background-color: ${(props) =>
-      props.theme.palette.backgroundColor.dark.color};
-    font-size: ${(props) => props.theme.typography.body.mobile.fontSize};
+    background-color: ${({ theme }) =>
+      theme.palette.backgroundColor.dark.color};
+    font-size: ${({ theme }) => theme.typography.body.mobile.fontSize};
   }
   & .control-dots .dot {
-    background-color: ${(props) => props.theme.palette.primary.default};
+    background-color: ${({ theme }) => theme.palette.primary.default};
   }
   & .control-next.control-arrow:before {
-    border-left-color: ${(props) => props.theme.palette.primary.default};
+    border-left-color: ${({ theme }) => theme.palette.primary.default};
   }
   & .control-prev.control-arrow:before {
-    border-right-color: ${(props) => props.theme.palette.primary.default};
+    border-right-color: ${({ theme }) => theme.palette.primary.default};
   }
 `;
 

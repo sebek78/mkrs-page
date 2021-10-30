@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { SectionCardType } from "../Card";
-import SectionCard from "../Card";
+import { SectionCardType } from "../../Card";
+import SectionCard from "../../Card";
 
 type SectionCardListProps = {
   cards: Array<SectionCardType>;
@@ -13,13 +13,13 @@ const StyledDiv = styled.div`
   align-items: center;
   width: 90vw;
   height: auto;
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     width: 44vw;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     width: 45vw;
   }
 `;

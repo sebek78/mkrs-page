@@ -12,26 +12,26 @@ const StyledWrapper = styled.div`
   padding: 0 16px;
   h1 p:first-child {
     font-weight: 300;
-    font-size: ${(props) => props.theme.typography.h1.mobile.fontSize};
+    font-size: ${({ theme }) => theme.typography.h1.mobile.fontSize};
   }
   h1 p:last-child {
     font-weight: 300;
-    font-size: ${(props) => props.theme.typography.h2.mobile.fontSize};
+    font-size: ${({ theme }) => theme.typography.h2.mobile.fontSize};
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     h1 p:first-child {
-      font-size: ${(props) => props.theme.typography.h1.tablet.fontSize};
+      font-size: ${({ theme }) => theme.typography.h1.tablet.fontSize};
     }
     h1 p:last-child {
-      font-size: ${(props) => props.theme.typography.h2.tablet.fontSize};
+      font-size: ${({ theme }) => theme.typography.h2.tablet.fontSize};
     }
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
     h1 p:first-child {
-      font-size: ${(props) => props.theme.typography.h1.desktop.fontSize};
+      font-size: ${({ theme }) => theme.typography.h1.desktop.fontSize};
     }
     h1 p:last-child {
-      font-size: ${(props) => props.theme.typography.h2.desktop.fontSize};
+      font-size: ${({ theme }) => theme.typography.h2.desktop.fontSize};
     }
   }
 `;

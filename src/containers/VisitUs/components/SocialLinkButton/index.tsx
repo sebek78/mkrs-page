@@ -14,17 +14,17 @@ const SocialLinkWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 24px;
-  font-size: ${(props) => props.theme.typography.h3.mobile.fontSize};
-  @media (min-width: ${(props) => props.theme.breakpoints.tablet}) {
-    font-size: ${(props) => props.theme.typography.h3.tablet.fontSize};
+  font-size: ${({ theme }) => theme.typography.h3.mobile.fontSize};
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
+    font-size: ${({ theme }) => theme.typography.h3.tablet.fontSize};
   }
-  @media (min-width: ${(props) => props.theme.breakpoints.desktop}) {
-    font-size: ${(props) => props.theme.typography.h3.desktop.fontSize};
+  @media (min-width: ${({ theme }) => theme.breakpoints.desktop}) {
+    font-size: ${({ theme }) => theme.typography.h3.desktop.fontSize};
   }
 `;
 
 const StyledText = styled.a`
-  color: ${(props) => props.color};
+  color: ${({ color }) => color};
   padding: 16px 12px 16px 16px;
   text-decoration: none;
 `;

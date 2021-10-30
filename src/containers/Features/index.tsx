@@ -1,7 +1,7 @@
-import SectionCardList from "../../components/Section/components/SectionCardList";
-import SectionContentWrapper from "../../components/Section/components/SectionContentWrapper";
-import SectionDescription from "../../components/Section/components/SectionDescription";
-import { SectionCardType } from "../../components/Section/components/Card";
+import SectionCardList from "../../components/SectionComponents/SectionCardList";
+import SectionContentWrapper from "../../components/SectionComponents/SectionContentWrapper";
+import SectionDescription from "../../components/SectionComponents/SectionDescription";
+import { SectionCardType } from "../../components/Card";
 
 const cards: SectionCardType[] = [
   {
